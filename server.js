@@ -19,8 +19,8 @@ app.use(
 app.use(express.json())
 
 app.use('/api/users',userRoute);
-app.use('/api/dresses',dressRoute)
-app.use('/api/orsers',ordersRoute)
+app.use('/api/dress',dressRoute)
+app.use('/api/orders',ordersRoute)
 
 
 

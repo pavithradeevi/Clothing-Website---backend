@@ -54,7 +54,7 @@ router.delete("/:id",  async (req, res) => {
   });
   
   //GET ALL PRODUCTS
-  router.get("/", async (req, res) => {
+  router.get("/getalldresses", async (req, res) => {
     const qNew = req.query.new;
     const qCategory = req.query.category;
     try {
