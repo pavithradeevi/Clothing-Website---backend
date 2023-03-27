@@ -28,16 +28,16 @@ app.get("/",(req,res)=>{
     res.send("Welcome to our Shop")
 })
 
-app.get("/getdress",(req,res)=>{
-    Dress.find({},(err,docs)=>{
-        if(err){
-            console.log(err);
-        }
-        else{
-            res.send(docs)
-        }
-    })
-})
+// app.get("/getdress",(req,res)=>{
+//     Dress.find({},(err,docs)=>{
+//         if(err){
+//             console.log(err);
+//         }
+//         else{
+//             res.send(docs)
+//         }
+//     })
+// })
 
 
 const uri = process.env.MONGO_URL;
