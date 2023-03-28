@@ -6,7 +6,7 @@ const dressRoute = require('./routes/dressRoute.js')
 const userRoute = require('./routes/userRoute.js')
 const Dress = require('./models/dressModel')
 const ordersRoute = require('./routes/ordersRoute')
-
+const router = express.Router();
 dotenv.config();
 
 const app = express();
@@ -16,6 +16,11 @@ app.use(
     })
   );
 
+  router.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 app.use(express.json())
 
 app.use('/api/users',userRoute);
