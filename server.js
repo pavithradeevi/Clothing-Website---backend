@@ -28,6 +28,18 @@ app.get("/",(req,res)=>{
     res.send("Welcome to our Shop")
 })
 
+// async function fun1(req, res){
+//   let response = await request.get('/getdress');
+//   Dress.find({},(err,docs)=>{
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         res.send(docs)
+//     }
+// })
+// }
+
 app.get("/getdress",(req,res)=>{
     Dress.find({},(err,docs)=>{
         if(err){
