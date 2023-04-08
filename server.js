@@ -30,7 +30,7 @@ app.use('/api/orders',ordersRoute)
 
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to our Shop")
+    res.send("Welcome to our Dress Shop ")
 })
 
 // async function fun1(req, res){
